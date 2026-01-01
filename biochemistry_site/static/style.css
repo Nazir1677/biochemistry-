@@ -1,0 +1,76 @@
+/* Simple responsive styles */
+:root {
+    --bg: #f7f9fb;
+    --accent: #2b7a78;
+    --muted: #666
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: Segoe UI, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: #111;
+    margin: 0
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem
+}
+
+.site-header {
+    background: #fff;
+    border-bottom: 1px solid #e3e6ea
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.main-nav a {
+    margin-left: 0.75rem;
+    color: var(--accent);
+    text-decoration: none
+}
+
+.hero {
+    padding: 2rem 0
+}
+
+.btn {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 0.5rem 0.9rem;
+    border-radius: 6px;
+    text-decoration: none
+}
+
+.site-footer {
+    margin-top: 2rem;
+    padding: 1rem 0;
+    color: var(--muted);
+    font-size: 0.9rem
+}
+
+dl dt {
+    font-weight: 700;
+    margin-top: 1rem
+}
+
+@media(max-width:600px) {
+    .site-header .container {
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .main-nav {
+        margin-top: 0.5rem
+    }
+}
